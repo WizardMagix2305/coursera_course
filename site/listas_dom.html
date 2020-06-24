@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listasss</title>
+	
+	<style>
+		.navy{
+			color: navy;
+		}
+		.purple{
+			color: purple;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<h1 id = "Titulo" >Listas para el mandado</h1>
+	<p> <b> <i>Comprar estas cosas en la bodega aurrera:</i></b></p>
+	<ol id = "Lista"  class="purple">
+		<li>Huevos para la nevera</li>
+		<li>Salchichas</li>
+		<li>Pan para sandwiches</li>
+		<li>Mayonesa</li>
+		<li>Mostaza</li>
+
+	</ol>
+
+
+
+	<script type="text/javascript">
+		
+		
+		function NuevosElementos(producto, lugar){
+			var elemento =  document.createElement("li"), contenidoDeElemento = document.createTextNode(producto), Lista1 = document.getElementById("Lista"), seccion = document.getElementsByTagName("li")[0];
+			elemento.appendChild(contenidoDeElemento);
+
+			if (lugar === 0)
+				Lista1.appendChild(elemento);
+			if(lugar === 1)
+				Lista1.insertBefore(elemento, seccion);
+		}
+
+
+
+		/*var elemento = document.createElement("li"), contenidoDeElemento = document.createTextNode("Condones UwU");
+		elemento.appendChild(contenidoDeElemento);
+
+		var Lista1 = document.getElementById("Lista"), lista2 = document.getElementsByTagName("li")[3];
+		Lista1.insertBefore(elemento, lista2); */
+
+		NuevosElementos("Platano", 0)
+		NuevosElementos("Manzana", 0)
+		NuevosElementos("Guayaba", 1)
+		NuevosElementos("Melon", 1)
+		NuevosElementos("Hamburguesa" , 1)
+
+		var titulo = document.getElementById("Titulo"), yesss = document.getElementsByTagName("li")[3];
+		titulo.style.color = "navy";
+		titulo.style.background = "pink";
+
+	</script>
+
+
+</body>
+</html>
