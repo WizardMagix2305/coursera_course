@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 1.2em;
+	font-family: "Bembo Book", serif;
+}
+.navbar-brand{
+	font-size: 2rem;
+	font-family: "Comic Sans MS", serif;
+}
+#collapse-menu{
+	position: relative; 
+	background-color: transparent;
+	border: 1px solid #026396;
+}
+button span:nth-child(2){
+	position: absolute;
+	left: -60px;
+	font-size: 1em;
+	color: white;
+}
+h1{
+	margin-top: 20px;
+	margin-bottom: 38px;
+	text-align: center;
+	font-family: "Comic Sans MS", sans-serif;
+	color: navy;
+}
+#main-content article div{
+	border: 1.3px black solid;
+	margin-bottom: 15px;
+	padding: 15px;
+	position: relative;
+	background-color: #D1DADB;
+}
+article h3{
+	color: #D80505;
+}
+
+article div	a:hover{
+	text-decoration: none;
+	text-shadow: 2px 2px 10px blue; 
+}
+
+article div:hover{
+	box-shadow: 2px 2px 6px #D1DADB;
+}
+article hr{
+	width:80%;
+	background-color: black;
+	opacity: .6;
+}
+.bg-orange{
+	background-color: orange;
+}
